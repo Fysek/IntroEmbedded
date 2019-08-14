@@ -10,9 +10,10 @@
  *****************************************************************************/
 /**
  * @file stats.c
- * @brief <Add Brief Description Here >
+ * @brief Source file with statistic function definitions
  *
- * <Add Extended Description Here>
+ * This file contains definitions of different statistic functions for given char array.
+ * File stats.h is required to ensure correct working for functions.
  *
  * @author Mateusz Dyrdó³
  * @date 14.08.2019
@@ -26,10 +27,10 @@
 
 
 void print_statistics(unsigned char tab[], unsigned int tabSize){
-     printf("median %d\n", find_median(tab, tabSize));
-     printf("mean %d\n", find_mean(tab, tabSize));
-     printf("minimum %d\n", find_minimum(tab, tabSize));
-     printf("maximum %d\n", find_maximum(tab, tabSize));
+    printf("median %d\n", find_median(tab, tabSize));
+    printf("mean %d\n", find_mean(tab, tabSize));
+    printf("minimum %d\n", find_minimum(tab, tabSize));
+    printf("maximum %d\n", find_maximum(tab, tabSize));
 }
 
 void print_array(unsigned char tab[], unsigned int tabSize){
@@ -86,17 +87,17 @@ void sort_array(unsigned char tab[], unsigned int tabSize){
 
 
 void main() {
-  unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
-                              114, 88,   45,  76, 123,  87,  25,  23,
-                              200, 122, 150, 90,   92,  87, 177, 244,
-                              201,   6,  12,  60,   8,   2,   5,  67,
-                                7,  87, 250, 230,  99,   3, 100,  90};
-
-
-  print_array(test, SIZE);
-  print_statistics(test, SIZE);
-  sort_array(test, SIZE);
-  print_array(test, SIZE);
+	unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
+								114, 88,   45,  76, 123,  87,  25,  23,
+								200, 122, 150, 90,   92,  87, 177, 244,
+								201,   6,  12,  60,   8,   2,   5,  67,
+									7,  87, 250, 230,  99,   3, 100,  90};
+	
+	
+	print_array(test, SIZE);
+	print_statistics(test, SIZE);
+	sort_array(test, SIZE);
+	print_array(test, SIZE);
 }
 
 

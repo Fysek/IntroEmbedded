@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name>
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief Header file with statistic function declaration
  *
- * <Add Extended Description Here>
+ * This file contains declarations of different statistic functions for given char array.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Mateusz Dyrdół
+ * @date 14.08.2019
  *
  */
 #ifndef __STATS_H__
@@ -27,7 +27,7 @@
  * @brief A function that prints the statistics of an array including minimum, maximum, mean, and median.
  *
  * This function takes as an input a reference to char array and size of array.
- * It prints 
+ * It prints median, mean, minimum, maximum of array
  *
  * @param An unsigned char pointer to an n-element data array
  * @param An unsigned integer as the size of the array
@@ -40,7 +40,8 @@
  /**
  * @brief Given an array of data and a length, prints the array to the screen
  *
- * <Add Extended Description Here>
+ * This function takes as an input a reference to char array and size of array.
+ * It prints elements in the array
  *
  * @param An unsigned char pointer to an n-element data array
  * @param An unsigned integer as the size of the array
@@ -53,7 +54,8 @@ void print_array(unsigned char tab[], unsigned int tabSize);
  /**
  * @brief Given an array of data and a length, returns the median value
  *
- * <Add Extended Description Here>
+ * This function takes as an input a reference to char array and size of array.
+ * It finds median of the array and returns it.
  *
  * @param An unsigned char pointer to an n-element data array
  * @param An unsigned integer as the size of the array
@@ -66,7 +68,8 @@ unsigned char find_median(unsigned char tab[], unsigned int tabSize);
  /**
  * @brief Given an array of data and a length, returns the mean
  *
- * <Add Extended Description Here>
+ * This function takes as an input a reference to char array and size of array.
+ * It finds mean of the array and returns it.
  *
  * @param An unsigned char pointer to an n-element data array
  * @param An unsigned integer as the size of the array
@@ -79,7 +82,8 @@ unsigned char find_mean(unsigned char tab[], unsigned int tabSize);
  /**
  * @brief Given an array of data and a length, returns the maximum,
  *
- * <Add Extended Description Here>
+ * This function takes as an input a reference to char array and size of array.
+ * It finds maximum of the array and returns it.
  *
  * @param An unsigned char pointer to an n-element data array
  * @param An unsigned integer as the size of the array
@@ -92,7 +96,8 @@ unsigned char find_maximum(unsigned char tab[], unsigned int tabSize);
  /**
  * @brief Given an array of data and a length, returns the minimum
  *
- * <Add Extended Description Here>
+ * This function takes as an input a reference to char array and size of array.
+ * It finds minimum of the array and returns it.
  *
  * @param An unsigned char pointer to an n-element data array
  * @param An unsigned integer as the size of the array
@@ -105,7 +110,8 @@ unsigned char find_minimum(unsigned char tab[], unsigned int tabSize);
  /**
  * @brief Given an array of data and a length, sorts the array from largest to smallest. (The zeroth Element should be the largest value, and the last element (n-1) should be the smallest value. )
  *
- * <Add Extended Description Here>
+ * This function takes as an input a reference to char array and size of array.
+ * It sorts the array with bubblesort algorithm.
  *
  * @param An unsigned char pointer to an n-element data array
  * @param An unsigned integer as the size of the array
