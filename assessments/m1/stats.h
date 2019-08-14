@@ -26,9 +26,11 @@
 /**
  * @brief A function that prints the statistics of an array including minimum, maximum, mean, and median.
  *
- * <Add Extended Description Here>
+ * This function takes as an input a reference to char array and size of array.
+ * It prints 
  *
- * @param A unsigned char pointer to an n-element data array
+ * @param An unsigned char pointer to an n-element data array
+ * @param An unsigned integer as the size of the array
  *
  * @return void
  */
