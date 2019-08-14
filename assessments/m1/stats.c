@@ -76,10 +76,10 @@ void sort_array(unsigned char tab[], unsigned int tabSize){
     char temp;
     for(int i=0;i<tabSize;i++){
 		for(int j=1;j<tabSize-i;j++){
-            if(tab[j-1]>tab[j]){
-                temp = tab[j];
-                tab[j] = tab[j-1];
-                tab[j-1] = temp;
+            if(tab[j-1]<tab[j]){
+                temp = tab[j-1];
+                tab[j-1] = tab[j];
+                tab[j] = temp;
             }
 		}
     }
@@ -92,8 +92,8 @@ void main() {
 								200, 122, 150, 90,   92,  87, 177, 244,
 								201,   6,  12,  60,   8,   2,   5,  67,
 									7,  87, 250, 230,  99,   3, 100,  90};
-	
-	
+
+
 	print_array(test, SIZE);
 	print_statistics(test, SIZE);
 	sort_array(test, SIZE);

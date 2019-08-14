@@ -111,7 +111,7 @@ unsigned char find_minimum(unsigned char tab[], unsigned int tabSize);
  * @brief Given an array of data and a length, sorts the array from largest to smallest. (The zeroth Element should be the largest value, and the last element (n-1) should be the smallest value. )
  *
  * This function takes as an input a reference to char array and size of array.
- * It sorts the array with bubblesort algorithm.
+ * It sorts the array with bubblesort algorithm from largest to smallest.
  *
  * @param An unsigned char pointer to an n-element data array
  * @param An unsigned integer as the size of the array
