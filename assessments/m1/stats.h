@@ -2,14 +2,14 @@
  * Copyright (C) 2017 by Alex Fosdick - University of Colorado
  *
  * Redistribution, modification or use of this software in source or binary
- * forms is permitted as long as the files maintain this copyright. Users are 
+ * forms is permitted as long as the files maintain this copyright. Users are
  * permitted to modify this and use it to learn about the field of embedded
  * software. Alex Fosdick and the University of Colorado are not liable for any
- * misuse of this material. 
+ * misuse of this material.
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
+ * @file <Add File Name>
  * @brief <Add Brief Description Here >
  *
  * <Add Extended Description Here>
@@ -21,36 +21,31 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/* Add Your Declarations and Function Comments here */
 
 /**
  * @brief A function that prints the statistics of an array including minimum, maximum, mean, and median.
  *
  * <Add Extended Description Here>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param A unsigned char pointer to an n-element data array
  *
  * @return void
  */
- void print_statistics();
- 
- 
+ void print_statistics(unsigned char tab[], unsigned int tabSize);
+
+
  /**
  * @brief Given an array of data and a length, prints the array to the screen
  *
  * <Add Extended Description Here>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param An unsigned char pointer to an n-element data array
+ * @param An unsigned integer as the size of the array
  *
  * @return void
  */
-void print_array(); 
+void print_array(unsigned char tab[], unsigned int tabSize);
 
 
  /**
@@ -58,14 +53,12 @@ void print_array();
  *
  * <Add Extended Description Here>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param An unsigned char pointer to an n-element data array
+ * @param An unsigned integer as the size of the array
  *
- * @return int 
+ * @return An unsigned char result from the function
  */
-int find_median();
+unsigned char find_median(unsigned char tab[], unsigned int tabSize);
 
 
  /**
@@ -73,14 +66,12 @@ int find_median();
  *
  * <Add Extended Description Here>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param An unsigned char pointer to an n-element data array
+ * @param An unsigned integer as the size of the array
  *
- * @return <Add Return Informaiton here>
+ * @return An unsigned char result from the function
  */
-int find_mean();
+unsigned char find_mean(unsigned char tab[], unsigned int tabSize);
 
 
  /**
@@ -88,14 +79,12 @@ int find_mean();
  *
  * <Add Extended Description Here>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param An unsigned char pointer to an n-element data array
+ * @param An unsigned integer as the size of the array
  *
- * @return <Add Return Informaiton here>
+ * @return An unsigned char result from the function
  */
-int find_maximum(); 
+unsigned char find_maximum(unsigned char tab[], unsigned int tabSize);
 
 
  /**
@@ -103,14 +92,12 @@ int find_maximum();
  *
  * <Add Extended Description Here>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param An unsigned char pointer to an n-element data array
+ * @param An unsigned integer as the size of the array
  *
- * @return <Add Return Informaiton here>
+ * @return An unsigned char result from the function
  */
-int find_minimum();  
+unsigned char find_minimum(unsigned char tab[], unsigned int tabSize);
 
 
  /**
@@ -118,16 +105,13 @@ int find_minimum();
  *
  * <Add Extended Description Here>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param An unsigned char pointer to an n-element data array
+ * @param An unsigned integer as the size of the array
  *
- * @return <Add Return Informaiton here>
+ * @return void
  */
-int sort_array();
- 
- 
+void sort_array(unsigned char tab[], unsigned int tabSize);
+
 
 
 #endif /* __STATS_H__ */
