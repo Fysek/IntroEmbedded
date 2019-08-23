@@ -47,8 +47,8 @@ unsigned char find_median(unsigned char tab[], unsigned int tabSize){
     }
 }
 
-unsigned char find_mean(unsigned char tab[], unsigned int tabSize){
-    char sum=0;
+int find_mean(unsigned char tab[], unsigned int tabSize){
+   int sum=0;
     for(int i=0; i<tabSize; i++)
         sum+=tab[i];
     return(sum/tabSize);

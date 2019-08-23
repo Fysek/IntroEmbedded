@@ -76,7 +76,7 @@ unsigned char find_median(unsigned char tab[], unsigned int tabSize);
  *
  * @return An unsigned char result from the function
  */
-unsigned char find_mean(unsigned char tab[], unsigned int tabSize);
+int find_mean(unsigned char tab[], unsigned int tabSize);
 
 
  /**
